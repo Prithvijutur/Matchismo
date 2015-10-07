@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3h2-ww-20e">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.39634220790000002" blue="0.34602833820000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" backgroundImage="Earthrise_Revisited_2013">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="25" y="23" width="84" height="148"/>
+                                </variation>
+                                <connections>
+                                    <action selector="cardButtons:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="H52-nx-kE2"/>
+                                    <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="mAZ-Ei-jJS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WII-QE-Qob">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.39634220790000002" blue="0.34602833820000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" backgroundImage="Earthrise_Revisited_2013">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="112" y="20" width="86" height="148"/>
+                                </variation>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="F7t-sj-RFn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hci-Kb-9uj">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.39634220790000002" blue="0.34602833820000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" backgroundImage="Earthrise_Revisited_2013">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="200" y="20" width="86" height="151"/>
+                                </variation>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Gx3-kB-9O3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hwH-Jq-XT0">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.39634220790000002" blue="0.34602833820000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" backgroundImage="Earthrise_Revisited_2013">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="288" y="20" width="87" height="153"/>
+                                </variation>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Mdh-NG-e8Y"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jHF-9i-1DI">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.39634220790000002" blue="0.34602833820000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" backgroundImage="Earthrise_Revisited_2013">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="25" y="179" width="84" height="151"/>
+                                </variation>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="wNy-fh-T7O"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0bB-Zf-wuD">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.39634220790000002" blue="0.34602833820000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" backgroundImage="Earthrise_Revisited_2013">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="112" y="179" width="86" height="152"/>
+                                </variation>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="qVm-FM-JAd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oj7-ig-CN7">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.39634220790000002" blue="0.34602833820000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" backgroundImage="Earthrise_Revisited_2013">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="200" y="179" width="86" height="153"/>
+                                </variation>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="f5u-ba-BDs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="usL-dG-x1S">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.39634220790000002" blue="0.34602833820000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" backgroundImage="Earthrise_Revisited_2013">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="288" y="179" width="87" height="150"/>
+                                </variation>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="H9g-Em-Nv4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GUf-nm-0RU">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.39634220790000002" blue="0.34602833820000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" backgroundImage="Earthrise_Revisited_2013">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="25" y="338" width="84" height="148"/>
+                                </variation>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="WQR-TH-4kM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8EP-7L-rRv">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.39634220790000002" blue="0.34602833820000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" backgroundImage="Earthrise_Revisited_2013">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="112" y="338" width="86" height="147"/>
+                                </variation>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="R5O-PO-cD0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xan-BZ-VWy">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.39634220790000002" blue="0.34602833820000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" backgroundImage="Earthrise_Revisited_2013">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="200" y="338" width="86" height="150"/>
+                                </variation>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="gbT-r1-3uN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F2m-CZ-0wJ">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.39634220790000002" blue="0.34602833820000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" backgroundImage="Earthrise_Revisited_2013">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="288" y="338" width="87" height="150"/>
+                                </variation>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="4Re-5L-Dzy"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lOw-MG-UBe">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="41" y="537" width="134" height="21"/>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B6V-7o-g43">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" backgroundImage="Earthrise_Revisited_2013">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="286" y="503" width="89" height="77"/>
+                                </variation>
+                                <connections>
+                                    <action selector="touchResetScoreButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="mQJ-r2-RyQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.50196081399917603" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="3h2-ww-20e"/>
+                                <exclude reference="WII-QE-Qob"/>
+                                <exclude reference="Hci-Kb-9uj"/>
+                                <exclude reference="hwH-Jq-XT0"/>
+                                <exclude reference="jHF-9i-1DI"/>
+                                <exclude reference="0bB-Zf-wuD"/>
+                                <exclude reference="oj7-ig-CN7"/>
+                                <exclude reference="usL-dG-x1S"/>
+                                <exclude reference="GUf-nm-0RU"/>
+                                <exclude reference="8EP-7L-rRv"/>
+                                <exclude reference="Xan-BZ-VWy"/>
+                                <exclude reference="F2m-CZ-0wJ"/>
+                                <exclude reference="lOw-MG-UBe"/>
+                                <exclude reference="B6V-7o-g43"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="3h2-ww-20e"/>
+                                <include reference="WII-QE-Qob"/>
+                                <include reference="Hci-Kb-9uj"/>
+                                <include reference="hwH-Jq-XT0"/>
+                                <include reference="jHF-9i-1DI"/>
+                                <include reference="0bB-Zf-wuD"/>
+                                <include reference="oj7-ig-CN7"/>
+                                <include reference="usL-dG-x1S"/>
+                                <include reference="GUf-nm-0RU"/>
+                                <include reference="8EP-7L-rRv"/>
+                                <include reference="Xan-BZ-VWy"/>
+                                <include reference="F2m-CZ-0wJ"/>
+                                <include reference="lOw-MG-UBe"/>
+                                <include reference="B6V-7o-g43"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="ScoreLabel" destination="lOw-MG-UBe" id="wNk-UR-0oU"/>
+                        <outlet property="resetScoreButton" destination="B6V-7o-g43" id="OBk-rK-sDf"/>
+                        <outletCollection property="cardButtons" destination="3h2-ww-20e" id="jdY-wA-x6y"/>
+                        <outletCollection property="cardButtons" destination="WII-QE-Qob" id="nwr-6Q-6bg"/>
+                        <outletCollection property="cardButtons" destination="Hci-Kb-9uj" id="i6p-5J-41M"/>
+                        <outletCollection property="cardButtons" destination="hwH-Jq-XT0" id="7cc-no-iXj"/>
+                        <outletCollection property="cardButtons" destination="jHF-9i-1DI" id="5km-Gw-40Z"/>
+                        <outletCollection property="cardButtons" destination="0bB-Zf-wuD" id="5vd-gj-gSA"/>
+                        <outletCollection property="cardButtons" destination="oj7-ig-CN7" id="AVB-ib-zOf"/>
+                        <outletCollection property="cardButtons" destination="usL-dG-x1S" id="LtB-lL-hcT"/>
+                        <outletCollection property="cardButtons" destination="GUf-nm-0RU" id="X1R-dD-Ldz"/>
+                        <outletCollection property="cardButtons" destination="8EP-7L-rRv" id="1xW-Ks-PbI"/>
+                        <outletCollection property="cardButtons" destination="Xan-BZ-VWy" id="myv-3u-9k0"/>
+                        <outletCollection property="cardButtons" destination="F2m-CZ-0wJ" id="7Bp-Rl-rro"/>
+                        <outletCollection property="cardButtons" destination="3h2-ww-20e" id="ZnN-Sn-dfx"/>
+                        <outletCollection property="cardButtons" destination="WII-QE-Qob" id="U5W-Co-dOu"/>
+                        <outletCollection property="cardButtons" destination="Hci-Kb-9uj" id="gB3-Kc-4Ee"/>
+                        <outletCollection property="cardButtons" destination="hwH-Jq-XT0" id="i6j-YA-DTk"/>
+                        <outletCollection property="cardButtons" destination="jHF-9i-1DI" id="h6Q-b5-UsC"/>
+                        <outletCollection property="cardButtons" destination="0bB-Zf-wuD" id="LMr-Jd-Ntw"/>
+                        <outletCollection property="cardButtons" destination="oj7-ig-CN7" id="SaJ-qx-Arb"/>
+                        <outletCollection property="cardButtons" destination="usL-dG-x1S" id="EWW-Nk-4oI"/>
+                        <outletCollection property="cardButtons" destination="GUf-nm-0RU" id="dAi-uc-7Ly"/>
+                        <outletCollection property="cardButtons" destination="8EP-7L-rRv" id="IJ2-2a-O0s"/>
+                        <outletCollection property="cardButtons" destination="Xan-BZ-VWy" id="H7m-pH-doL"/>
+                        <outletCollection property="cardButtons" destination="F2m-CZ-0wJ" id="Zqv-LF-LAu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="651" y="553"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Earthrise_Revisited_2013" width="720" height="480"/>
+    </resources>
+</document>
