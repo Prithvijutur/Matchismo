@@ -19,6 +19,7 @@
 - (instancetype) init
 {
     _score = 0;
+    _mode = 0;
     return nil;
 }
 
@@ -69,6 +70,7 @@ static const int COST_TO_CHOOSE = 1;
 - (void) chooseCardAtIndex:(NSUInteger) index
 {
     Card *card = [self cardAtIndex:index];
+    NSMutableArray *chosenCards = [[NSMutableArray alloc] init];
     
     if(!card.isMatched)
     {
@@ -82,19 +84,30 @@ static const int COST_TO_CHOOSE = 1;
             {
                 if(otherCard.isChosen && !otherCard.isMatched)
                 {
-                    int matchScore = [card match:@[otherCard]];
-                    if(matchScore)
+                    [chosenCards addObject:otherCard];
+                    if(chosenCards.count > (_mode)) // 2 based index
                     {
-                        self.score += matchScore * MATCH_BONUS;
-                        otherCard.matched = true;
-                        card.matched = true;
+                        int matchScore = [card match:chosenCards];
+                        if(matchScore)
+                        {
+                            self.score += matchScore * MATCH_BONUS;
+                            for(Card *choseCard in chosenCards)
+                            {
+                                choseCard.chosen = true;
+                                choseCard.matched = true;
+                            }
+                            card.matched = true;
+                        }
+                        else
+                        {
+                            self.score -= MISMATCH_PENALTY;
+                            for(Card *choseCard in chosenCards)
+                            {
+                                choseCard.chosen = false;
+                            }
+                        }
+                        break;
                     }
-                    else
-                    {
-                        self.score -= MISMATCH_PENALTY;
-                        otherCard.chosen = false;
-                    }
-                    break;
                 }
             }
             self.score -= COST_TO_CHOOSE;

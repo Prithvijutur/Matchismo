@@ -206,6 +206,21 @@
                                     <action selector="touchResetScoreButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="mQJ-r2-RyQ"/>
                                 </connections>
                             </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="dGQ-vw-Maa">
+                                <rect key="frame" x="-61" y="-14" width="123" height="29"/>
+                                <color key="backgroundColor" red="0.80000001192092896" green="0.80000001192092896" blue="0.80000001192092896" alpha="0.60999999999999999" colorSpace="calibratedRGB"/>
+                                <segments>
+                                    <segment title="2 Card"/>
+                                    <segment title="3 Card"/>
+                                </segments>
+                                <color key="tintColor" red="0.40000000596046448" green="0.40000000596046448" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="139" y="528" width="111" height="29"/>
+                                </variation>
+                                <connections>
+                                    <action selector="SegmentedControlValueChanged:" destination="vXZ-lx-hvc" eventType="valueChanged" id="WHW-5K-Reg"/>
+                                </connections>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.50196081399917603" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <variation key="default">
@@ -224,6 +239,7 @@
                                 <exclude reference="F2m-CZ-0wJ"/>
                                 <exclude reference="lOw-MG-UBe"/>
                                 <exclude reference="B6V-7o-g43"/>
+                                <exclude reference="dGQ-vw-Maa"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -242,11 +258,13 @@
                                 <include reference="F2m-CZ-0wJ"/>
                                 <include reference="lOw-MG-UBe"/>
                                 <include reference="B6V-7o-g43"/>
+                                <include reference="dGQ-vw-Maa"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
                         <outlet property="ScoreLabel" destination="lOw-MG-UBe" id="wNk-UR-0oU"/>
+                        <outlet property="SegmentedControl" destination="dGQ-vw-Maa" id="Mjn-vy-efc"/>
                         <outlet property="resetScoreButton" destination="B6V-7o-g43" id="OBk-rK-sDf"/>
                         <outletCollection property="cardButtons" destination="3h2-ww-20e" id="jdY-wA-x6y"/>
                         <outletCollection property="cardButtons" destination="WII-QE-Qob" id="nwr-6Q-6bg"/>

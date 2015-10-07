@@ -17,6 +17,7 @@
 @property (nonatomic, strong) Deck * deck;
 @property (nonatomic, strong) CardMatchingGame *game;
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *cardButtons;
+@property (weak, nonatomic) IBOutlet UISegmentedControl *SegmentedControl;
 @end
 
 @implementation ViewController
@@ -45,6 +46,9 @@
     [self updateUI];
 }
 
+- (IBAction)SegmentedControlValueChanged:(id)sender {
+    self.game.mode = [self.SegmentedControl selectedSegmentIndex];
+}
 
 - (IBAction)touchCardButton:(UIButton *)sender
 {

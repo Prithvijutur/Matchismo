@@ -18,5 +18,5 @@
 - (BOOL) resetCardGame;
 
 @property (nonatomic, readonly) NSInteger score;
-
+@property (nonatomic) int mode;
 @end

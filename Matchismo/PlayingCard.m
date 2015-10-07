@@ -14,16 +14,18 @@
 -(int) match:(NSArray *)otherCards
 {
     int score = 0;
-    if (otherCards.count == 1)      // for 2 card matching mode
+    if (otherCards.count > 0)      // for 3 card matching mode
     {
-        PlayingCard *otherCard = [otherCards lastObject];
-        if ([otherCard.suit isEqualToString:self.suit])
+        for(PlayingCard* otherCard in otherCards)
         {
-            score =1;
-        }
-        else if (otherCard.rank == self.rank)
-        {
-            score = 4;
+            if ([otherCard.suit isEqualToString:self.suit])
+            {
+                score =1;
+            }
+            else if (otherCard.rank == self.rank)
+            {
+                score = 4;
+            }
         }
     }
     return score;
@@ -65,11 +67,5 @@
     NSArray *rankStrings = [PlayingCard rankStrings];
     return [rankStrings[self.rank] stringByAppendingString:self.suit];
 }
-
-//-(int)match:(NSArray*) otherCards
-//{
-//    int score =0;
-//    return score;
-//}
 
 @end
